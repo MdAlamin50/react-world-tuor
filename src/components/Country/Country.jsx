@@ -9,13 +9,14 @@ const Country = ({ country, handleVisitedCountry }) => {
     setVisited(!visited);
   };
 
-  const passWithParams = () => handleVisitedCountry(country);
+  const passWithParams = () =>handleVisitedCountry(country);
+  
 
   return (
     <div className={`country ${visited ? "visited" : "non-visited"}`}>
       <h3 style={{ color: visited ? "purple" : "white" }}>
         Name:{name.common}
-      </h3>
+      </h3> 
       <img src={flags.png} alt="" />
       <p>area:{area}</p>
       <p>Population:{population}</p>
